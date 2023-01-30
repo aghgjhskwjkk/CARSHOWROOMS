@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAR SHOWROOMS</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="main">
+        <header>
+            <div class="navbar">
+                <div class="nav">
+                    <a href="./index.html">
+                        <img src="./img/logo.png" alt="">
+                    </a>
+                    <ul class="nav-links">
+                        <li><a href="./index.html">Home</a> </li>
+                        <!-- <li><a href="#">About</a> </li>
+                        <li><a href="#">Products</a> </li> -->
+                        <li><a href="/contact.html">Contact</a> </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz@9..144&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#main {
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.blue-bg-btn {
+    font-family: sans-serif;
+    background-color: #bf1010;
+    color: white;
+    padding: 20px 20px;
+    border: none;
+    box-shadow: none;
+    font-weight: 200;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    cursor: pointer;
+    border-radius: 10px 0px 10px 0px;
+}
+
+.blue-bg-btn:hover {
+    transform: scale(0.96);
+    transition: all 0.3s ease-in-out;
+    box-shadow: 3px 3px 3px #2eefd8;
+}
+
+.navbar {
+    width: 100%;
+    padding: 10px 50px;
+    /* height: 10vh; */
+    background-color: #f5f8fa;
+}
+
+.navbar .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav img {
+    width: 5rem;
+}
+
+.navbar .nav .nav-links {
+    display: flex;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #292D31;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+
+.nav-links a:hover {
+    color: #0abc3f;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-links li {
+    list-style: none;
+    margin: 10px 20px;
+}
+
+
+.homeSection {
+    font-family: sans-serif;
+    padding: 80px 0px;
+
+    /* border: 1px solid red; */
+}
+
+.homeSection .container {
+    width: 100%;
+    padding: 50px 10px;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+
+.homeSection .container .left-part {
+    /* border: 1px solid green; */
+    width: 48%;
+    padding: 20px;
+}
+
+.homeSection .container .left-part span {
+    margin-left: 0px;
+    color: #5138ee;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+
+.homeSection .container h2 {
+    font-size: 80px;
+}
+
+
+.homeSection .container .right-part {
+    width: 48%;
+    /* border: 1px solid red; */
+}
+
+.homeSection .container .right-part img {
+    width: 85%;
+    border-radius: 20px 70px 20px 70px;
+    box-shadow: 25px 30px 3px #baaffa;
+}
+
+
+
+.featuredProduct {
+    display: flex;
+    flex-direction: column;
+    /* align-items:center; */
+    justify-content: space-between;
+    height: 600px;
+    /* border: 1px solid red; */
+    padding: 80px;
+
+    background-color: #f5f8fa;
+}
+
+
+.featuredProduct .topPart {
+    /* border: 1px solid blue; */
+}
+
+.featuredProduct .topPart p {
+    color: #5138ee;
+    font-family: sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.featuredProduct .topPart h2 {
+    font-family: 'Fraunces', serif;
+    font-weight: bolder;
+    font-size: 35px;
+}
+
+.featuredProduct .bottomPart .container {
+    /* border: 1px solid green; */
+    display: flex;
+    /* padding: 10px 50px; */
+    justify-content: space-around;
+
+}
+
+.featuredProduct .bottomPart .container .box {
+    overflow-x: hidden;
+    width: 25%;
+    padding: 10px 20px;
+    text-align: center;
+    border: 1px solid rgb(220, 220, 220);
+    background-color: white;
+    border-radius: 25px;
+}
+
+.featuredProduct .bottomPart .container .box:hover {
+    cursor: pointer;
+    box-shadow: 4px 5px 3px gray;
+    transform: scale(1.03);
+    transition: all 0.3s ease-out;
+    border-radius: 0px 20px 0px 20px;
+}
+
+.featuredProduct .bottomPart .container .box img {
+    /* width: 200px; */
+    height: 250px;
+}
+
+.featuredProduct .bottomPart .container .box .boxContent {
+    /* padding: ; */
+    /* background-color: #6a5ef2e2; */
+    padding: 7px 10px;
+}
+
+.featuredProduct .bottomPart .container .box .boxContent p {
+    font-family: sans-serif;
+    color: rgba(9, 9, 9, 0.935);
+    font-size: 18px;
+    font-weight: 800;
+    /* background-color: #6254f3; */
+}
+
+
+.brand-section {
+    padding: 100px 80px;
+}
+
+.brand-section h3 {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: capitalize;
+}
+
+.brand-section {
+    /* font-size: 2rem; */
+    font-weight: bolder;
+}
+
+
+.brand-section img {
+    min-width: 10rem;
+    height: 10rem;
+}
+
+.brand-section-slider {
+    margin-top: 3.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+
+
+
+
+
+.footerSection {
+    margin-top: 100px;
+    background-color: #0a1435;
+    font-family: sans-serif;
+}
+
+.footerSection_mainContainer .footerUpperPart {
+    display: flex;
+    flex-direction: row;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    justify-content: space-around;
+    align-items: flex-start;
+    border-bottom: 1px solid #696969;
+}
+
+.footerUpperPart .footerUpperPart_left {
+    max-width: 270px;
+    min-width: max-content;
+}
+
+.footerUpperPart .footerUpperPart_left h2 {
+    color: #dadada;
+    font-weight: 300;
+    font-family: sans-serif;
+    font-size: 40px;
+
+}
+
+.footerSection_mainContainer .footerUpperPart_right {
+    display: flex;
+    flex-direction: row;
+    /* width: 500px; */
+    flex-wrap: wrap;
+    max-width: 750px;
+
+    justify-content: space-between;
+    align-items: flex-start;
+
+}
+
+/* footer Upper part */
+
+.footerUpperPart_right .footerUpperPart_text {
+    font-size: 20px;
+    color: #fff;
+}
+
+.footerUpperPart_right a {
+    text-decoration: none;
+}
+
+.footerUpperPart_right_Column {
+    margin: 2px 20px;
+}
+
+.footerUpperPart_right_Column div {
+    transition: scale 0.3s ease-out;
+}
+
+.footerUpperPart_right_Column:hover div {
+    scale: 1.1;
+    cursor: pointer;
+}
+
+.footerUpperPart_right_Column h3 {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: lighter;
+    letter-spacing: 0.4rem;
+
+}
+
+
+
+
+/* footer Lower Part */
+
+.footerLowerPart {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-top: 1px solid #696969;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 2.7rem;
+    text-align: center;
+    color: #dadada;
+}
+
+.footerLowerPart a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 300ms ease;
+    transition: scale 300ms ease;
+    font-weight: 400;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.footerLowerPart a:hover {
+    color: rgba(255, 255, 255, 0.5);
+}
+        </style>
+
+        <div class="homeSection">
+            <div class="container">
+                <div class="left-part">
+                    <span>Welcome To</span>
+                    <h2>CAR SHOWROOMS</h2>
+                    <p style="color: #1d1d1d; text-align: justify; margin: 20px 0px;">Lorem ipsum dolor, sit amet
+                        consectetur adipisicing elit. Dolore omnis non, fugit tempore
+                        similique nam quibusdam lorem50lo Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+                        delectus cupiditate fuga quia magnam adipisci in odio nulla dicta rem? ipsum voluptas
+                        dignissimos aliquid.</p>
+                    <button class="blue-bg-btn">
+                        Shop Now
+                    </button>
+                </div>
+
+                <div class="right-part">
+                    <img src="assets/images/showroom.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="featuredProduct">
+
+            <div class="topPart">
+                <p>Check Now!</p>
+                <h2>Our Most Selling CARS</h2>
+            </div>
+            <div class="bottomPart">
+                <div class="container">
+                    <div class="box">
+                        <img src="assets/images/OIP.jpg" alt="">
+                        <div class="boxContent">
+                            <p>NISSAN GTR</p>
+                            <p>&#8377;$58000</p>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <img src="assets/images/Toyota-Supra_US-Version-2020-1600-08.webp" alt="">
+                        <div class="boxContent">
+                            <p>SUPRA</p>
+                            <p>&#8377;$8000</p>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <img src="assets/images/OIP (1).jpg" alt="">
+                        <div class="boxContent">
+                            <p>MUSTANG </p>
+                            <p>&#8377;$11300</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="qualities">
+
+        </div>
+
+        <div class="brand-section">
+
+            <div class='container'>
+                <h3>Trusted By 80+ CUSTOMERS</h3>
+                <div class='brand-section-slider'>
+                    <div class="slide">
+                        <img src="assets/images/1.jpg"
+                            alt="trusted-cars" />
+                    </div>
+                    <div class="slide">
+                        <img src="assets/images/2.jpg"
+                            alt="trusted-cars" />
+                    </div>
+                    <div class="slide">
+                        <img src="assets/images/3.jpg"
+                            alt="trusted-cars" />
+                    </div>
+                    <div class="slide">
+                        <img src="assets/images/4.jpg"
+                            alt="trusted-cars" />
+                    </div>
+                    <div class="slide">
+                        <img src="assets/images/5.jpg"
+                            alt="trusted-cars" />
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+
+        <footer class="footerSection">
+            <div class="footerSection_mainContainer container">
+                <div class="footerUpperPart" data-aos="fade-down">
+                    <div class="footerUpperPart_left">
+                        <h2>Get in <br> touch today</h2>
+                    </div>
+                    <div class="footerUpperPart_right">
+                        <div class="footerUpperPart_right_Column">
+                            <h3>DELHI NCR, IN</h3>
+                            <a href="mailto:contact@apnastore.com">
+                                <div class="footerUpperPart_text">contact@CAR SHOWROOMS.com</div>
+                            </a>
+                        </div>
+                        <div class="footerUpperPart_right_Column">
+                            <h3>Call Us</h3>
+                            <a href="tel:+91-9311017025">
+                                <div class="footerUpperPart_text">+91 7011648350</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footerLowerPart">
+                    Copyright © 2022 CARSHOWROOMS | Designed and Developed by
+                    <a href="#"> AYAAN KHAN </a>
+                </div>
+
+            </div>
+        </footer>
+
+
+    </div>
+</body>
+
+</html>
